@@ -1,6 +1,6 @@
 class Client < ApplicationRecord
   include Fae::BaseModelConcern
-
+  
   validates :phone, presence: true
   validates :email,
     uniqueness: true,
@@ -13,5 +13,4 @@ class Client < ApplicationRecord
   def fae_display_field
     name
   end
-
 end

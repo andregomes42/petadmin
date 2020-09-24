@@ -1,5 +1,6 @@
 class Campaign < ApplicationRecord
   include Fae::BaseModelConcern
+  
   validates :title, presence: true
   validates :body, presence: true
   
@@ -9,5 +10,4 @@ class Campaign < ApplicationRecord
   def fae_display_field
     title
   end
-
 end
